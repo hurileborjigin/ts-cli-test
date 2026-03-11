@@ -1,0 +1,31 @@
+{
+  "name": "ts-cli-test",
+  "version": "0.0.1",
+  "description": "",
+  "bin": {
+    "ts-cli-test": "./dist/index.js"
+  },
+  "main": "index.js",
+  
+  "scripts": {
+    "link-cli": "yarn unlink --global && chmod +x ./dist/index.js && yarn link --global",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hurileborjigin/ts-cli-test.git"
+  },
+  "keywords": [],
+  "author": "Hurile Borjigin",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hurileborjigin/ts-cli-test/issues"
+  },
+  "homepage": "https://github.com/hurileborjigin/ts-cli-test#readme",
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "typescript": "^5.9.3"
+  }
+}
