@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "link-cli": "yarn unlink --global && chmod +x ./dist/index.js && yarn link --global",
+    "link-cli": "(yarn unlink --global || true) && chmod +x ./dist/index.js && yarn link --global",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc -w"
   },
