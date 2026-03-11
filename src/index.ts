@@ -1,7 +1,16 @@
 #!/usr/bin/env node
 
-const hello = (message: string) => {
-  console.log(message);
-}
+import {Command} from "commander";
 
-hello("hello!!!");
+// Declare the program
+const program = new Command();
+
+
+// Add actions to that CLI
+program.action(() => {
+    console.log("hello from ts-cli-test");
+}).description("Say Hello")
+
+// Execute the CLI with the given arguments
+
+program.parse(process.argv);

@@ -6,7 +6,6 @@
     "ts-cli-test": "./dist/index.js"
   },
   "main": "index.js",
-  
   "scripts": {
     "link-cli": "yarn unlink --global && chmod +x ./dist/index.js && yarn link --global",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,5 +26,8 @@
   "devDependencies": {
     "@types/node": "^25.4.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "commander": "^14.0.3"
   }
 }
